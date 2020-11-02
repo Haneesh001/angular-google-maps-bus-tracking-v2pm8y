@@ -56,25 +56,6 @@ export class AppComponent {
         i++;
       })
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 // just an interface for type safety.
