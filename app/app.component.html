@@ -1,0 +1,15 @@
+<h1>Angular Google Maps (AGM) Demo</h1>
+<p>
+	<a href="https://angular-maps.com/" target="_blank">Official Website</a>
+</p>
+
+<agm-map [latitude]="currentPos.lat" [longitude]="currentPos.lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
+ (mapClick)="mapClicked($event)">
+	<agm-marker *ngFor="let point of points" [latitude]="point.lat" [longitude]="point.lng"></agm-marker>
+
+		<agm-polyline-point *ngFor="let point of points" [latitude]="point.lat" [longitude]="point.lng"></agm-polyline-point>
+	
+
+</agm-map>
+
+{{points | json}}
